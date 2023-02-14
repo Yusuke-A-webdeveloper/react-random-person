@@ -3,22 +3,22 @@ const reducer = (state, action) => {
     return { ...state, loading: true };
   }
   if (action.type === 'FETCH_PERSON') {
-    if (state.person) {
-      const { name } = action.payload;
-      return {
-        ...state,
-        loading: false,
-        person: action.payload,
-        title: name,
-        value: 'name',
-      };
-    } else {
-      return {
-        ...state,
-        loading: false,
-        person: action.payload,
-      };
-    }
+    const { name } = action.payload;
+    return {
+      ...state,
+      loading: false,
+      person: action.payload,
+      title: name,
+      value: 'name',
+    };
+    //   if (state.person) {
+    // } else {
+    //   return {
+    //     ...state,
+    //     loading: false,
+    //     person: action.payload,
+    //   };
+    // }
   }
   if (action.type === 'CHANGE_VALUES') {
     return {
