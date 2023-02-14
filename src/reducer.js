@@ -11,14 +11,6 @@ const reducer = (state, action) => {
       title: name,
       value: 'name',
     };
-    //   if (state.person) {
-    // } else {
-    //   return {
-    //     ...state,
-    //     loading: false,
-    //     person: action.payload,
-    //   };
-    // }
   }
   if (action.type === 'CHANGE_VALUES') {
     return {
