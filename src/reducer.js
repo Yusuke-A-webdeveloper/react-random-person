@@ -4,7 +4,7 @@ const reducer = (state, action) => {
   }
   if (action.type === 'FETCH_PERSON') {
     if (state.person) {
-      const { name } = state.person;
+      const { name } = action.payload;
       return {
         ...state,
         loading: false,

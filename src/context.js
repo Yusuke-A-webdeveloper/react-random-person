@@ -8,7 +8,7 @@ const url = 'https://randomuser.me/api/';
 const initialState = {
   loading: false,
   person: null,
-  title: '',
+  title: 'random person',
   value: 'name',
 };
 
